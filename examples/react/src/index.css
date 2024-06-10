@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tiptap p.is-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #ced3d9;
+  pointer-events: none;
+  height: 0;
+}
+.tiptap {
+  width: 1000px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+.tiptap:focus {
+  outline: none;
+}
+.ProseMirror-selectednode {
+  outline: 2px solid #0069ff;
+}
+.math {
+  @apply border;
+  @apply border-gray-300;
+  @apply cursor-pointer;
+  @apply rounded-md;
+  @apply my-3;
+  @apply overflow-x-auto;
+}
+.math:not(.math-selected):hover {
+  @apply bg-gray-50;
+}
+.math-selected {
+  @apply p-2;
+  @apply cursor-text;
+  @apply font-mono;
+}
+.math-content-empty::before {
+  content: "Enter LaTeX formula";
+  float: left;
+  color: #ced3d9;
+  pointer-events: none;
+  height: 0;
+}
+.katex {
+  font-size: 1.5em;
+}

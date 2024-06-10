@@ -1,0 +1,45 @@
+{
+  "name": "tiptap-math",
+  "version": "1.0.0",
+  "description": "A LaTeX extension for Tiptap",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js"
+  },
+  "keywords": [
+    "tiptap",
+    "tiptap extension",
+    "tiptap math",
+    "LaTeX"
+  ],
+  "author": "Turki Aloufi",
+  "files": [
+    "dist/"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@tiptap/core": "^2.4.0",
+    "@tiptap/pm": "^2.4.0",
+    "@types/katex": "^0.16.7",
+    "katex": "^0.16.10",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "@tiptap/core": "^2.4.0",
+    "@tiptap/pm": "^2.4.0",
+    "katex": "^0.16.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buttondown/tiptap-math",
+    "directory": "package"
+  }
+}
