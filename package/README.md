@@ -2,6 +2,10 @@
 
 A LaTeX extension for Tiptap
 
+### Demo
+
+See it in action [here](https://codesandbox.io/p/devbox/tiptap-math-example-777xhm).
+
 ## Getting Started
 
 ### Installation
